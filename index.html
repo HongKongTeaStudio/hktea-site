@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PHQL75V5');</script>
-<!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HK Tea Studio | Чайний шоурум та простір чайної культури у Києві</title>
     <meta name="description" content="HK Tea Studio — новий простір чайної культури та шоурум у центрі Києва між Золотими воротами та Університетом. Автентичний чай, чаювання, дегустації та шляхетна атмосфера.">
@@ -19,6 +17,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <style>
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #fbfbfb; color: #111; }
         .hero { text-align: center; max-width: 600px; padding: 2rem; }
+        
+        /* Блок із захистом логотипа */
+        .logo-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem; /* Органічний відступ від заголовка */
+            max-width: 200px; /* Оптимальний розмір для цього логотипа */
+            width: 100%;
+            user-select: none;
+        }
+        .logo-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            pointer-events: none; /* Заборона перетягування */
+            -webkit-user-drag: none;
+        }
+        .shield {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background: transparent;
+            cursor: default;
+        }
+
         .studio-title { font-weight: 300; font-size: 1.5rem; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 2rem; margin-top: 0;}
         .coming-soon-phrase { font-size: 1.8rem; font-weight: 400; line-height: 1.4; color: #111; margin-bottom: 3rem; }
         .contact-email { font-size: 1rem; font-weight: bold; color: #111; text-decoration: none; border-bottom: 2px solid #111; padding-bottom: 5px; }
@@ -26,11 +52,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHQL75V5"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHQL75V5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div class="hero">
+<div class="hero">
+        <div class="logo-wrapper" oncontextmenu="return false;">
+            <img src="hktea_logo.jpg" alt="HK Tea Studio Logo">
+            <div class="shield" title="HK Tea Studio"></div>
+        </div>
+
         <h1 class="studio-title">HK TEA STUDIO</h1>
         <p class="coming-soon-phrase">Між «Університетом» та «Золотими воротами» вже заварюється щось особливе. Новий простір чайної культури — незабаром у самому серці Києва.</p>
         <a href="mailto:tea@hktea.studio" class="contact-email">tea@hktea.studio</a>
