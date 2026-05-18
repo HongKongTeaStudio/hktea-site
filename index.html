@@ -16,7 +16,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:url" content="https://hktea.studio/">
 </head>
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #e3ded5; color: #111; }
+        /* Колір фона з лого: #e4e0d7 */
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #e4e0d7; color: #111; }
         .hero { text-align: center; max-width: 600px; padding: 2rem; }
         
         /* Блок із захистом логотипа */
@@ -24,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             position: relative;
             display: inline-block;
             margin-bottom: 2rem; 
-            max-width: 250px; /* Трохи збільшили контейнер, щоб логотипу не було тісно */
+            max-width: 250px; 
             width: 100%;
             user-select: none;
         }
@@ -34,9 +35,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             display: block;
             pointer-events: none; 
             -webkit-user-drag: none;
-            mix-blend-mode: darken; /* Ідеально зливає краї JPG з фоном сторінки */
-            transform: translateZ(0); /* Апаратне згладжування: блокує обрізку країв при зумі */
-        }
+            mix-blend-mode: multiply; /* Видаляє рамку */
+                    }
         .shield {
             position: absolute;
             top: 0;
@@ -63,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .social-icons a:hover { opacity: 0.6; transform: translateY(-2px); }
         .social-icons svg { width: 100%; height: 100%; fill: currentColor; }
     </style>
-<body>
+    <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHQL75V5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="hero">
