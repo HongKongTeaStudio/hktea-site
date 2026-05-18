@@ -16,15 +16,16 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PHQL75V5');</script>
 
-    <style>
-        /* Колір фона з лого: #dcd8cf */body { 
+<style>
+        /* Колір фона з лого: #e2ddd4 */
+        body { 
             margin: 0; 
-            padding: 0rem 0 0rem 0;
+            padding: 0 0 2rem 0; /* Убрали 2rem сверху, оставили только 2rem снизу для скролла */
             box-sizing: border-box; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             display: flex; 
             justify-content: center; 
-            align-items: flex-start;
+            align-items: flex-start; /* Всё прижато к верхнему краю */
             min-height: 100vh; 
             background-color: #e2ddd4; 
             color: #111; 
@@ -33,14 +34,14 @@
         .hero { 
             text-align: center; 
             max-width: 600px; 
-            padding: 2rem; 
+            padding: 0 2rem; /* Убрали 2rem сверху внутри контейнера */
         }
         
         /* Блок із захистом логотипа */
         .logo-wrapper {
             position: relative;
             display: inline-block;
-            margin-bottom: 2rem; 
+            margin-bottom: 0; /* Убрали отступ снизу, чтобы текст прижался к лого */
             max-width: 250px; 
             width: 100%;
             user-select: none;
@@ -52,6 +53,9 @@
             display: block;
             pointer-events: none; 
             -webkit-user-drag: none;
+            /* ЭТИ ДВЕ СТРОКИ "ПРИЖИМАЮТ" ЛОГОТИП */
+            margin-top: -18%;    /* Выталкивает пустую часть файла вверх за край окна */
+            margin-bottom: -15%; /* Подтягивает текст снизу вплотную к цифрам 2025 */
         }
         
         .shield {
@@ -71,7 +75,7 @@
             letter-spacing: 5px; 
             text-transform: uppercase; 
             margin-bottom: 2rem; 
-            margin-top: 0;
+            margin-top: 0; /* Убедились, что сверху отступа нет */
         }
         
         .coming-soon-phrase { 
@@ -84,7 +88,7 @@
         
         /* Стилі для контактів та соцмереж */
         .contacts-wrapper { 
-            margin-bottom: 3rem; 
+            margin-bottom: 4rem; /* Оставили увеличенный отступ до соцсетей */
             line-height: 2; 
         }
         
