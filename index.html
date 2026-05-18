@@ -14,8 +14,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:description" content="Між «Університетом» та «Золотими воротами» вже заварюється щось особливе">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hktea.studio/">
+</head>
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #e2ddd4; color: #111; }
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #e3ded5; color: #111; }
         .hero { text-align: center; max-width: 600px; padding: 2rem; }
         
         /* Блок із захистом логотипа */
@@ -23,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             position: relative;
             display: inline-block;
             margin-bottom: 2rem; 
-            max-width: 200px; 
+            max-width: 250px; /* Трохи збільшили контейнер, щоб логотипу не було тісно */
             width: 100%;
             user-select: none;
         }
@@ -33,7 +34,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             display: block;
             pointer-events: none; 
             -webkit-user-drag: none;
-            backface-visibility: hidden;
+            mix-blend-mode: darken; /* Ідеально зливає краї JPG з фоном сторінки */
+            transform: translateZ(0); /* Апаратне згладжування: блокує обрізку країв при зумі */
         }
         .shield {
             position: absolute;
@@ -49,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .studio-title { font-weight: 300; font-size: 1.5rem; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 2rem; margin-top: 0;}
         .coming-soon-phrase { font-size: 1.8rem; font-weight: 400; line-height: 1.4; color: #111; margin-bottom: 2.5rem; }
         
-        /* Нові стилі для контактів та соцмереж */
+        /* Стилі для контактів та соцмереж */
         .contacts-wrapper { margin-bottom: 2rem; line-height: 2; }
         .contact-item { margin-bottom: 0.3rem; }
         .address-text { font-size: 1.1rem; color: #333; }
@@ -61,7 +63,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .social-icons a:hover { opacity: 0.6; transform: translateY(-2px); }
         .social-icons svg { width: 100%; height: 100%; fill: currentColor; }
     </style>
-</head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHQL75V5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
